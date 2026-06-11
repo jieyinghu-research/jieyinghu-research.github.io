@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +9,33 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 24px;
+      margin: 42px auto;
+      padding: 0 28px;
       line-height: 1.55;
       color: #222;
       background: #fff;
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 34px;
+      margin: 0 0 8px 0;
+      font-weight: 600;
     }
 
     h2 {
       font-size: 22px;
       margin-top: 36px;
+      margin-bottom: 14px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 6px;
+      font-weight: 600;
     }
 
     h3 {
-      font-size: 17px;
-      margin-bottom: 4px;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-weight: 600;
     }
 
     p {
@@ -38,6 +44,11 @@
 
     ul {
       margin-top: 6px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
     }
 
     a {
@@ -50,48 +61,49 @@
     }
 
     .header {
-      display: flex;
-      gap: 28px;
-      align-items: flex-start;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
 
-    .photo {
-      width: 180px;
-      height: 220px;
-      object-fit: cover;
-      border: 1px solid #ddd;
+    .title {
+      font-size: 18px;
+      margin-top: 4px;
+      margin-bottom: 2px;
+    }
+
+    .affiliation {
+      font-size: 18px;
+      margin-top: 0;
     }
 
     .contact {
-      margin-top: 12px;
-    }
-
-    .section {
-      margin-top: 24px;
+      margin-top: 20px;
     }
 
     .paper {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .paper-title {
-      font-weight: bold;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .authors {
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 6px;
     }
 
     .note {
       color: #555;
     }
 
-    @media (max-width: 700px) {
-      .header {
-        flex-direction: column;
-      }
-
-      .photo {
-        width: 160px;
-        height: 200px;
-      }
+    .footer {
+      margin-top: 42px;
+      padding-top: 14px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -99,90 +111,70 @@
 <body>
 
   <div class="header">
-    <!-- 如果暂时没有照片，可以先删除下面这一行 -->
-    <!-- <img src="files/photo.jpg" alt="Jieying Hu" class="photo"> -->
+    <h1>Jieying Hu</h1>
 
-    <div>
-      <h1>Jieying Hu</h1>
+    <p class="title">Finance Ph.D. Candidate</p>
+    <p class="affiliation">USC Marshall School of Business</p>
 
+    <div class="contact">
+      <p>Email: <a href="mailto:jieying.hu@marshall.usc.edu">jieying.hu@marshall.usc.edu</a></p>
       <p>
-        Ph.D. Candidate in Finance<br>
-        [Your Department / Business School]<br>
-        [Your University]
+        Hoffman Hall 231<br>
+        701 Exposition Blvd.<br>
+        Los Angeles, CA 90089
       </p>
-
-      <div class="contact">
-        <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-        <p>
-          <a href="files/cv.pdf">Curriculum Vitae</a> |
-          <a href="#">Google Scholar</a> |
-          <a href="#">SSRN</a> |
-          <a href="#">LinkedIn</a>
-        </p>
-      </div>
     </div>
   </div>
 
-  <hr>
+  <h2>Research Interests</h2>
 
-  <h2>Research</h2>
+  <p>
+    Behavioral Finance, Fixed Income, Asset Pricing, AI in Finance
+  </p>
 
-  <h3>Research Interests</h3>
-  <ul>
-    <li>Asset Pricing</li>
-    <li>Corporate Finance</li>
-    <li>Financial Intermediation</li>
-    <li>Empirical Finance</li>
-  </ul>
-
-  <h3>Working Papers</h3>
+  <h2>Working Papers</h2>
 
   <div class="paper">
-    <p class="paper-title">Paper Title One</p>
-    <p class="note">with Coauthor Name</p>
+    <p class="paper-title">Rethinking the Yield Curve Using Subjective Expectations</p>
     <p>
-      Short abstract or one-sentence summary of the paper. This paper studies...
-    </p>
-    <p>
-      <a href="#">PDF</a> |
-      <a href="#">SSRN</a> |
-      <a href="#">Slides</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5035564" target="_blank" rel="noopener noreferrer">SSRN</a>
     </p>
   </div>
 
-  <div class="paper">
-    <p class="paper-title">Paper Title Two</p>
-    <p class="note">with Coauthor Name</p>
-    <p>
-      Short abstract or one-sentence summary of the paper.
-    </p>
-    <p>
-      <a href="#">PDF</a> |
-      <a href="#">SSRN</a>
-    </p>
-  </div>
+  <h2>Work in Progress</h2>
 
-  <h3>Work in Progress</h3>
-  <ul>
-    <li>Project Title, with Coauthor Name.</li>
-    <li>Project Title, with Coauthor Name.</li>
-  </ul>
+  <div class="paper">
+    <p class="paper-title">Asymmetric Distraction: Firm-specific News versus General News?</p>
+    <p class="authors">with David Hirshleifer and Dawn Wang</p>
+  </div>
 
   <h2>Teaching</h2>
 
   <ul>
-    <li>Course Name, Institution, Term</li>
-    <li>Course Name, Institution, Term</li>
+    <li>Macroeconomics for Business, Instructor</li>
+    <li>Selected Issues in Economic Theory, Teaching Assistant</li>
+    <li>Data Mining, Teaching Assistant</li>
   </ul>
 
-  <h2>Contact</h2>
+  <h2>Presentations</h2>
 
-  <p>
-    [Office Address]<br>
-    [Department / School]<br>
-    [University]<br>
-    Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a>
-  </p>
+  <ul>
+    <li>SFA Annual Meeting 2026, scheduled</li>
+    <li>FMA Annual Meeting 2025</li>
+    <li>USC Finance Ph.D. Miniconference 2025</li>
+    <li>USC Finance Ph.D. Miniconference 2024</li>
+  </ul>
+
+  <h2>Service</h2>
+
+  <ul>
+    <li>Chair, USC Marshall Finance Ph.D. Conference 2026</li>
+  </ul>
+
+  <div class="footer">
+    Last updated: June 2026
+  </div>
 
 </body>
 </html>
+```
