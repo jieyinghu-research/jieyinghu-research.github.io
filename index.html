@@ -1,11 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jieying Hu</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
+      line-height: 1.55;
+      color: #222;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 36px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin: 6px 0 12px 0;
+    }
+
+    ul {
+      margin-top: 6px;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .photo {
+      width: 180px;
+      height: 220px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+    }
+
+    .contact {
+      margin-top: 12px;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+
+    .paper {
+      margin-bottom: 18px;
+    }
+
+    .paper-title {
+      font-weight: bold;
+    }
+
+    .note {
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .photo {
+        width: 160px;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Jieying Hu</h1>
-  <p>Personal academic website under construction.</p>
+
+  <div class="header">
+    <!-- 如果暂时没有照片，可以先删除下面这一行 -->
+    <!-- <img src="files/photo.jpg" alt="Jieying Hu" class="photo"> -->
+
+    <div>
+      <h1>Jieying Hu</h1>
+
+      <p>
+        Ph.D. Candidate in Finance<br>
+        [Your Department / Business School]<br>
+        [Your University]
+      </p>
+
+      <div class="contact">
+        <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+        <p>
+          <a href="files/cv.pdf">Curriculum Vitae</a> |
+          <a href="#">Google Scholar</a> |
+          <a href="#">SSRN</a> |
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Research</h2>
+
+  <h3>Research Interests</h3>
+  <ul>
+    <li>Asset Pricing</li>
+    <li>Corporate Finance</li>
+    <li>Financial Intermediation</li>
+    <li>Empirical Finance</li>
+  </ul>
+
+  <h3>Working Papers</h3>
+
+  <div class="paper">
+    <p class="paper-title">Paper Title One</p>
+    <p class="note">with Coauthor Name</p>
+    <p>
+      Short abstract or one-sentence summary of the paper. This paper studies...
+    </p>
+    <p>
+      <a href="#">PDF</a> |
+      <a href="#">SSRN</a> |
+      <a href="#">Slides</a>
+    </p>
+  </div>
+
+  <div class="paper">
+    <p class="paper-title">Paper Title Two</p>
+    <p class="note">with Coauthor Name</p>
+    <p>
+      Short abstract or one-sentence summary of the paper.
+    </p>
+    <p>
+      <a href="#">PDF</a> |
+      <a href="#">SSRN</a>
+    </p>
+  </div>
+
+  <h3>Work in Progress</h3>
+  <ul>
+    <li>Project Title, with Coauthor Name.</li>
+    <li>Project Title, with Coauthor Name.</li>
+  </ul>
+
+  <h2>Teaching</h2>
+
+  <ul>
+    <li>Course Name, Institution, Term</li>
+    <li>Course Name, Institution, Term</li>
+  </ul>
+
+  <h2>Contact</h2>
+
+  <p>
+    [Office Address]<br>
+    [Department / School]<br>
+    [University]<br>
+    Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+  </p>
+
 </body>
 </html>
