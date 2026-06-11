@@ -1,53 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jieying Hu</title>
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
-      margin: 42px auto;
+      max-width: 980px;
+      margin: 46px auto;
       padding: 0 28px;
-      line-height: 1.55;
       color: #222;
       background: #fff;
-    }
-
-    h1 {
-      font-size: 34px;
-      margin: 0 0 8px 0;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin-top: 36px;
-      margin-bottom: 14px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-      font-weight: 600;
-    }
-
-    h3 {
-      font-size: 18px;
-      margin-top: 20px;
-      margin-bottom: 6px;
-      font-weight: 600;
-    }
-
-    p {
-      margin: 6px 0 12px 0;
-    }
-
-    ul {
-      margin-top: 6px;
-      padding-left: 22px;
-    }
-
-    li {
-      margin-bottom: 6px;
+      line-height: 1.5;
+      font-size: 16px;
     }
 
     a {
@@ -59,61 +27,116 @@
       text-decoration: underline;
     }
 
-    .header {
+    h1 {
+      font-size: 34px;
+      font-weight: 600;
+      margin: 0 0 12px 0;
+    }
+
+    h2 {
+      font-size: 21px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+    }
+
+    p {
+      margin: 4px 0 10px 0;
+    }
+
+    ul {
+      margin-top: 4px;
+      margin-bottom: 18px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .top {
       margin-bottom: 26px;
     }
 
-    .title {
+    .position {
       font-size: 18px;
-      margin-top: 4px;
-      margin-bottom: 2px;
+      margin-bottom: 0;
     }
 
-    .affiliation {
+    .school {
       font-size: 18px;
       margin-top: 0;
     }
 
     .contact {
-      margin-top: 20px;
+      margin-top: 18px;
     }
 
-    .paper {
-      margin-bottom: 20px;
+    .divider {
+      border: 0;
+      border-top: 1px solid #d9d9d9;
+      margin: 26px 0;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      column-gap: 36px;
+      margin: 24px 0;
+    }
+
+    .section-title {
+      padding-top: 2px;
+    }
+
+    .subsection {
+      margin-bottom: 24px;
     }
 
     .paper-title {
       font-weight: 600;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
-    .authors {
+    .paper-meta {
       color: #555;
       margin-top: 0;
-      margin-bottom: 6px;
     }
 
-    .note {
-      color: #555;
-    }
-
-    .footer {
-      margin-top: 42px;
-      padding-top: 14px;
-      border-top: 1px solid #eee;
+    .updated {
       color: #666;
       font-size: 14px;
+      margin-top: 34px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        margin: 32px auto;
+      }
+
+      .section {
+        display: block;
+      }
+
+      .section-title {
+        margin-bottom: 12px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="header">
+  <div class="top">
     <h1>Jieying Hu</h1>
 
-    <p class="title">Finance Ph.D. Candidate</p>
-    <p class="affiliation">USC Marshall School of Business</p>
+    <p class="position">Finance Ph.D. Candidate</p>
+    <p class="school">USC Marshall School of Business</p>
 
     <div class="contact">
       <p>Email: <a href="mailto:jieying.hu@marshall.usc.edu">jieying.hu@marshall.usc.edu</a></p>
@@ -125,54 +148,96 @@
     </div>
   </div>
 
-  <h2>Research Interests</h2>
+  <hr class="divider">
 
-  <p>
-    Behavioral Finance, Fixed Income, Asset Pricing, AI in Finance
-  </p>
+  <div class="section">
+    <div class="section-title">
+      <h2>Research</h2>
+    </div>
 
-  <h2>Working Papers</h2>
+    <div class="section-content">
 
-  <div class="paper">
-    <p class="paper-title">Rethinking the Yield Curve Using Subjective Expectations</p>
-    <p>
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5035564" target="_blank" rel="noopener noreferrer">SSRN</a>
-    </p>
+      <div class="subsection">
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Behavioral Finance</li>
+          <li>Fixed Income</li>
+          <li>Asset Pricing</li>
+          <li>AI in Finance</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Working Papers</h3>
+
+        <p class="paper-title">
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5035564" target="_blank" rel="noopener noreferrer">
+            Rethinking the Yield Curve Using Subjective Expectations
+          </a>
+        </p>
+        <p class="paper-meta">SSRN working paper.</p>
+      </div>
+
+      <div class="subsection">
+        <h3>Work in Progress</h3>
+
+        <p class="paper-title">Asymmetric Distraction: Firm-specific News versus General News?</p>
+        <p class="paper-meta">with David Hirshleifer and Dawn Wang.</p>
+      </div>
+
+    </div>
   </div>
 
-  <h2>Work in Progress</h2>
+  <hr class="divider">
 
-  <div class="paper">
-    <p class="paper-title">Asymmetric Distraction: Firm-specific News versus General News?</p>
-    <p class="authors">with David Hirshleifer and Dawn Wang</p>
+  <div class="section">
+    <div class="section-title">
+      <h2>Teaching</h2>
+    </div>
+
+    <div class="section-content">
+      <ul>
+        <li>Macroeconomics for Business, Instructor</li>
+        <li>Selected Issues in Economic Theory, Teaching Assistant</li>
+        <li>Data Mining, Teaching Assistant</li>
+      </ul>
+    </div>
   </div>
 
-  <h2>Teaching</h2>
+  <hr class="divider">
 
-  <ul>
-    <li>Macroeconomics for Business, Instructor</li>
-    <li>Selected Issues in Economic Theory, Teaching Assistant</li>
-    <li>Data Mining, Teaching Assistant</li>
-  </ul>
+  <div class="section">
+    <div class="section-title">
+      <h2>Presentations</h2>
+    </div>
 
-  <h2>Presentations</h2>
-
-  <ul>
-    <li>SFA Annual Meeting 2026, scheduled</li>
-    <li>FMA Annual Meeting 2025</li>
-    <li>USC Finance Ph.D. Miniconference 2025</li>
-    <li>USC Finance Ph.D. Miniconference 2024</li>
-  </ul>
-
-  <h2>Service</h2>
-
-  <ul>
-    <li>Chair, USC Marshall Finance Ph.D. Conference 2026</li>
-  </ul>
-
-  <div class="footer">
-    Last updated: June 2026
+    <div class="section-content">
+      <ul>
+        <li>SFA Annual Meeting 2026, scheduled</li>
+        <li>FMA Annual Meeting 2025</li>
+        <li>USC Finance Ph.D. Miniconference 2025</li>
+        <li>USC Finance Ph.D. Miniconference 2024</li>
+      </ul>
+    </div>
   </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-title">
+      <h2>Service</h2>
+    </div>
+
+    <div class="section-content">
+      <ul>
+        <li>Chair, USC Marshall Finance Ph.D. Conference 2026</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="updated">Last updated: June 2026</p>
 
 </body>
 </html>
+```
+
