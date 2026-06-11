@@ -12,7 +12,7 @@
       margin: 46px auto;
       padding: 0 28px;
       color: #222;
-      background: #fff;
+      background: #faf9f6;
       line-height: 1.5;
       font-size: 16px;
     }
@@ -33,13 +33,14 @@
     }
 
     h2 {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 600;
       margin: 0;
+      white-space: nowrap;
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
       margin: 0 0 8px 0;
     }
@@ -84,7 +85,7 @@
 
     .section {
       display: grid;
-      grid-template-columns: 160px 1fr;
+      grid-template-columns: 230px 1fr;
       column-gap: 36px;
       margin: 24px 0;
     }
@@ -124,6 +125,10 @@
     @media (max-width: 700px) {
       body {
         margin: 32px auto;
+      }
+
+      h2 {
+        white-space: normal;
       }
 
       .section {
@@ -216,7 +221,7 @@
 
   <div class="section">
     <div class="section-title">
-      <h2>Advising and<br>Research Experience</h2>
+      <h2>Advising and Research Experience</h2>
     </div>
 
     <div class="section-content">
